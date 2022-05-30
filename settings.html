@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>cars.zim | Settings</title>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/bootstrap/css/bootstrap.min.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/fontawesome/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+
+	<body class="container-xxl px-0">
+		<header
+			id="header"
+			class="container-xxl px-0 fixed-top bg-dark shadow-lg"
+		>
+			<nav class="navbar navbar-expand-lg navbar-dark p-1">
+				<div class="container-fluid">
+					<a class="navbar-brand fs-2 mb-2" href="index.html"
+						>cars<span class="text-primary">.zim</span></a
+					>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="collapse navbar-collapse"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="offers.html"
+									>Offers</a
+								>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="account.html"
+									>Account</a
+								>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="new-offer.html"
+									>New Offer</a
+								>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="login.html">Login</a>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="signup.html"
+									>Signup</a
+								>
+							</li>
+						</ul>
+
+						<div class="d-none d-lg-flex">
+							<a
+								href="new-offer.html"
+								class="new-offer-plus text-white me-2 px-2 fs-4"
+							>
+								<i class="bi bi-plus-circle"></i>
+							</a>
+
+							<a
+								href="notifications.html"
+								class="btn btn-primary position-relative me-2 px-2"
+							>
+								<i class="bi bi-bell"></i>
+								<span
+									class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
+								>
+									99+
+									<span class="visually-hidden"
+										>unread messages</span
+									>
+								</span>
+							</a>
+
+							<a
+								class="btn btn-outline-light me-2 d-flex align-items-center"
+								href="login.html"
+							>
+								Login
+							</a>
+
+							<a
+								class="btn btn-primary me-2 d-flex align-items-center"
+								href="signup.html"
+							>
+								Signup
+							</a>
+
+							<form action="" class="d-flex">
+								<input
+									name="q"
+									class="form-control"
+									type="search"
+									placeholder="Search"
+									aria-label="Search"
+								/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<!-- <div
+				class="my-0 alert alert-success alert-dismissible fade show"
+				role="alert"
+			>
+				<strong>Holy guacamole!</strong> You should check in on some of
+				those fields below.
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="alert"
+					aria-label="Close"
+				></button>
+			</div> -->
+		</header>
+
+		<main class="my-5">
+			<h1 class="text-center py-2">
+				Settings <i class="bi bi-gear"></i>
+			</h1>
+
+			<div class="container p-2">
+				<div class="accordion accordion-flush" id="settingsAccordion">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button
+								class="accordion-button lead collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="true"
+								aria-controls="flush-collapseOne"
+							>
+								<div class="notification-header">
+									<h5 class="p-0 m-0">
+										<i class="bi bi-bell pe-1"></i
+										>Notifications
+									</h5>
+								</div>
+							</button>
+						</h2>
+
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse px-5"
+							aria-labelledby="flush-headingOne"
+							data-bs-parent="#settingsAccordion"
+						>
+							<div class="accordion-body">
+								<h6>Select how you receive notifications.</h6>
+
+								<form>
+									<div class="form-check py-1">
+										<input
+											class="form-check-input"
+											type="checkbox"
+											name="notification-inbox"
+											value="sms"
+											id="smscheck"
+										/>
+
+										<label
+											class="form-check-label"
+											for="smscheck"
+										>
+											SMS
+										</label>
+
+										<small class="text-success px-3">
+											<i class="bi bi-info-circle"></i>
+											You'll need to provide your phone
+											number.
+											<a class="normal-link"
+												>edit account details</a
+											>
+										</small>
+									</div>
+
+									<div class="form-check py-1">
+										<input
+											class="form-check-input"
+											type="checkbox"
+											name="notification-inbox"
+											value="email"
+											id="emailcheck"
+											checked
+										/>
+
+										<label
+											class="form-check-label"
+											for="emailcheck"
+										>
+											Email
+										</label>
+									</div>
+
+									<div class="py-2">
+										<button
+											type="submit"
+											class="btn btn-primary"
+										>
+											Save changes
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingTwo">
+							<button
+								class="accordion-button lead collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo"
+								aria-expanded="true"
+								aria-controls="flush-collapseTwo"
+							>
+								<div class="notification-header">
+									<h5 class="p-0 m-0">
+										<i class="bi bi-person pe-1"></i>
+										Deactivate your account
+									</h5>
+								</div>
+							</button>
+						</h2>
+
+						<div
+							id="flush-collapseTwo"
+							class="accordion-collapse collapse px-5"
+							aria-labelledby="flush-headingTwo"
+							data-bs-parent="#settingsAccordion"
+						>
+							<div class="accordion-body">
+								<h6>Deactivate or delete your account.</h6>
+
+								<p class="text-success">
+									<i class="bi bi-info-circle pe-1"></i
+									>Deactivating your account will temporarily
+									remove your offers and profile from view on
+									the platform, but nothing will be deleted.
+									Your account will be reactivated when you
+									log in again.
+								</p>
+
+								<div class="py-2">
+									<a href="" class="btn btn-dark"
+										>Deactivate</a
+									>
+									<a href="" class="btn btn-outline-dark mx-2"
+										>Delete</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/custom.js"></script>
+	</body>
+</html>

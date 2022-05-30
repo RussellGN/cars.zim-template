@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>cars.zim | Enquire</title>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/fontawesome/css/all.min.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/bootstrap/css/bootstrap.min.css"
+		/>
+
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+
+	<body class="container-xxl px-0">
+		<header
+			id="header"
+			class="container-xxl px-0 fixed-top bg-dark shadow-lg"
+		>
+			<nav class="navbar navbar-expand-lg navbar-dark p-1">
+				<div class="container-fluid">
+					<a class="navbar-brand fs-2 mb-2" href="index.html"
+						>cars<span class="text-primary">.zim</span></a
+					>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="collapse navbar-collapse"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="offers.html"
+									>Offers</a
+								>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="account.html"
+									>Account</a
+								>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="new-offer.html"
+									>New Offer</a
+								>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="login.html">Login</a>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="signup.html"
+									>Signup</a
+								>
+							</li>
+						</ul>
+
+						<div class="d-none d-lg-flex">
+							<a
+								href="new-offer.html"
+								class="new-offer-plus text-white me-2 px-2 fs-4"
+							>
+								<i class="bi bi-plus-circle"></i>
+							</a>
+
+							<a
+								href="notifications.html"
+								class="btn btn-primary position-relative me-2 px-2"
+							>
+								<i class="bi bi-bell"></i>
+								<span
+									class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
+								>
+									99+
+									<span class="visually-hidden"
+										>unread messages</span
+									>
+								</span>
+							</a>
+
+							<a
+								class="btn btn-outline-light me-2 d-flex align-items-center"
+								href="login.html"
+							>
+								Login
+							</a>
+
+							<a
+								class="btn btn-primary me-2 d-flex align-items-center"
+								href="signup.html"
+							>
+								Signup
+							</a>
+
+							<form action="" class="d-flex">
+								<input
+									name="q"
+									class="form-control"
+									type="search"
+									placeholder="Search"
+									aria-label="Search"
+								/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<!-- <div
+				class="my-0 alert alert-success alert-dismissible fade show"
+				role="alert"
+			>
+				<strong>Holy guacamole!</strong> You should check in on some of
+				those fields below.
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="alert"
+					aria-label="Close"
+				></button>
+			</div> -->
+		</header>
+
+		<main class="my-4">
+			<h1 class="text-center mb-3">Enquire.</h1>
+
+			<form class="container p-3">
+				<div class="row">
+					<div class="col-12">
+						<p class="text-center">
+							Volvo X90 | USD 56 000 | Harare |
+							GeneralMotorsHarare | 2 feb 2022
+						</p>
+					</div>
+
+					<div class="col-md-6 order-md-2 py-4">
+						<h5 class="text-success text-center p-2">
+							Make a direct offer
+						</h5>
+
+						<div class="form-floating mb-3">
+							<input
+								name="offerprice"
+								type="number"
+								id="offerprice"
+								class="form-control"
+								placeholder="Your offer In USD"
+							/>
+							<label for="offerprice">Your offer In USD</label>
+						</div>
+
+						<div class="mb-3">
+							<label
+								for="offerdetails"
+								class="form-label d-block p-2"
+								>Queries and other details. Your contact details
+								will be sent automatically</label
+							>
+							<textarea
+								class="form-control"
+								name="offerdetails"
+								id="offerdetails"
+								rows="4"
+							>
+type something...</textarea
+							>
+						</div>
+
+						<div class="text-center">
+							<button class="btn btn-success m-2" type="submit">
+								Send
+							</button>
+
+							<button class="btn btn-danger" type="reset">
+								Reset
+							</button>
+						</div>
+					</div>
+
+					<div class="col contact-details py-4">
+						<h5 class="text-success text-center p-2">
+							Contact GeneralMotorsHarare
+						</h5>
+
+						<div class="my-3">
+							<i class="bi bi-telephone-fill bg-success"></i>
+							<h4>Call:</h4>
+							<p>+263 719668444</p>
+						</div>
+
+						<div class="my-3">
+							<i class="bi bi-envelope-fill bg-success"></i>
+							<h4>Email:</h4>
+							<p>gmharare@hotmail.com</p>
+						</div>
+
+						<div class="my-3">
+							<i class="bi bi-geo-alt-fill bg-success"></i>
+							<h4>Location:</h4>
+							<p>Avenues, Harare</p>
+						</div>
+					</div>
+				</div>
+			</form>
+		</main>
+
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

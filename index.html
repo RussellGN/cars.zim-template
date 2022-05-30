@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>cars.zim | Home</title>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/fontawesome/css/all.min.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/bootstrap/css/bootstrap.min.css"
+		/>
+
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+
+	<body class="container-xxl px-0">
+		<header
+			id="header"
+			class="container-xxl px-0 fixed-top bg-dark shadow-lg"
+		>
+			<nav class="navbar navbar-expand-lg navbar-dark p-1">
+				<div class="container-fluid">
+					<a class="navbar-brand fs-2 mb-2" href="index.html"
+						>cars<span class="text-primary">.zim</span></a
+					>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="collapse navbar-collapse"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" href="index.html"
+									>Home</a
+								>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="offers.html"
+									>Offers</a
+								>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="account.html"
+									>Account</a
+								>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="new-offer.html"
+									>New Offer</a
+								>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="login.html">Login</a>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="signup.html"
+									>Signup</a
+								>
+							</li>
+						</ul>
+
+						<div class="d-none d-lg-flex">
+							<a
+								href="new-offer.html"
+								class="new-offer-plus text-white me-2 px-2 fs-4"
+							>
+								<i class="bi bi-plus-circle"></i>
+							</a>
+
+							<a
+								href="notifications.html"
+								class="btn btn-primary position-relative me-2 px-2"
+							>
+								<i class="bi bi-bell"></i>
+								<span
+									class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
+								>
+									99+
+									<span class="visually-hidden"
+										>unread messages</span
+									>
+								</span>
+							</a>
+
+							<a
+								class="btn btn-outline-light me-2 d-flex align-items-center"
+								href="login.html"
+							>
+								Login
+							</a>
+
+							<a
+								class="btn btn-primary me-2 d-flex align-items-center"
+								href="signup.html"
+							>
+								Signup
+							</a>
+
+							<form action="" class="d-flex">
+								<input
+									name="q"
+									class="form-control"
+									type="search"
+									placeholder="Search"
+									aria-label="Search"
+								/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<div
+				class="my-0 alert alert-success alert-dismissible fade show"
+				role="alert"
+			>
+				message
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="alert"
+					aria-label="Close"
+				></button>
+			</div>
+		</header>
+
+		<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					data-bs-target="#heroCarousel"
+					data-bs-slide-to="0"
+					class="active"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
+
+				<button
+					type="button"
+					data-bs-target="#heroCarousel"
+					data-bs-slide-to="1"
+					aria-label="Slide 2"
+				></button>
+
+				<button
+					type="button"
+					data-bs-target="#heroCarousel"
+					data-bs-slide-to="2"
+					aria-label="Slide 3"
+				></button>
+			</div>
+
+			<div class="carousel-inner h-100">
+				<div class="carousel-item h-100 active">
+					<div
+						class="image-holder overflow-hidden h-100 w-100 position-relative d-flex justify-content-center align-items-center"
+					>
+						<img src="assets/img/image1.jpg" class="d-block" />
+					</div>
+
+					<div
+						class="carousel-caption top-50 start-50 translate-middle px-5"
+					>
+						<h1 class="mb-4 mx-auto">
+							THE BEST SECOND HAND CAR DEALS NATION-WIDE.
+						</h1>
+
+						<p class="mb-4 d-block mx-auto">
+							In search of a new car? Find the perfect car/vehicle
+							for your budget and needs here on cars.zim.
+						</p>
+
+						<div>
+							<form class="my-2 d-md-inline-block">
+								<input
+									type="search"
+									placeholder="Search..."
+									name=""
+									class="p-1 px-2"
+								/>
+							</form>
+
+							<span class="m-2 d-block d-md-inline-block"
+								>- OR -</span
+							>
+
+							<a href="offers.html" class="my-2 btn btn-primary"
+								>Browse Offers</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item h-100">
+					<div
+						class="image-holder overflow-hidden h-100 w-100 position-relative d-flex justify-content-center align-items-center"
+					>
+						<img src="assets/img/image1.jpg" class="d-block" />
+					</div>
+
+					<div
+						class="carousel-caption top-50 start-50 translate-middle px-5"
+					>
+						<h1 class="mb-4 mx-auto">Looking to sell?</h1>
+
+						<p class="mb-4 d-block mx-auto">
+							Advertise your car for sale at no cost whatsoever!
+							Whether you are a dealership business, agent or just
+							a regular person, our platform is completely free!
+						</p>
+
+						<div>
+							<a href="new-offer.html" class="m-2 btn btn-primary"
+								>Advertise Your Car
+								<i class="bi bi-arrow-right-short"></i
+							></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item h-100">
+					<div
+						class="image-holder overflow-hidden h-100 w-100 position-relative d-flex justify-content-center align-items-center"
+					>
+						<img src="assets/img/image1.jpg" class="d-block" />
+					</div>
+
+					<div
+						class="carousel-caption top-50 start-50 translate-middle px-5"
+					>
+						<h1 class="mb-4 mx-auto">
+							Vehicles for every need, from personal vehicles to
+							utility vehicles
+						</h1>
+
+						<p class="mb-4 d-block mx-auto">
+							Cars, motorcylcles, lorries, freight-trucks. We've
+							got them all.
+						</p>
+
+						<div>
+							<a href="offers.html" class="m-2 btn btn-primary"
+								>Browse Offers
+								<i class="bi bi-arrow-right-short"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button
+				class="carousel-control-prev"
+				type="button"
+				data-bs-target="#heroCarousel"
+				data-bs-slide="prev"
+			>
+				<span
+					class="carousel-control-prev-icon"
+					aria-hidden="true"
+				></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+
+			<button
+				class="carousel-control-next"
+				type="button"
+				data-bs-target="#heroCarousel"
+				data-bs-slide="next"
+			>
+				<span
+					class="carousel-control-next-icon"
+					aria-hidden="true"
+				></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<div class="container px-4 my-5">
+			<div class="g-2 row">
+				<div
+					class="col-lg-6 d-flex align-items-center justify-content-center background-img-container"
+				>
+					<img src="assets/img/image2.png" class="img-fluid" />
+				</div>
+
+				<div class="col-lg-6">
+					<div
+						class="content lead d-flex flex-column justify-content-center h-100"
+					>
+						<h3 class="display-5">Endless variety</h3>
+
+						<p>
+							Browse a variety of vehicles. Whether you're looking
+							for construction vehicles, motorcycles for your
+							delivery business or a bigger car for your family.
+							Cars.zim has got something for every need and
+							everybody.
+							<br />
+							<a href="offers.html" class="btn btn-primary my-2"
+								>Browse Offers<i
+									class="bi bi-arrow-right-short px-1"
+								></i
+							></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="create-account container px-4 my-5">
+			<div class="row flex-lg-row-reverse align-items-center g-2">
+				<div class="col-lg-6 text-success text-center">
+					<i class="bi bi-person-check"></i>
+				</div>
+
+				<div class="col-lg-6">
+					<h2 class="display-5 mb-3">
+						Why you should create your
+						<span class="text-success">FREE</span> account today.
+					</h2>
+
+					<p class="lead">
+						In order to post offers, you need an account. Creating
+						an account and posting offers is 100% free. Our platform
+						is here to allow people and dealerships to advertise
+						their vehicles to a wider audience.
+					</p>
+
+					<p class="text-success">
+						<i class="bi bi-info-circle"></i> You don't require an
+						account to view offers and enquire for them.
+					</p>
+
+					<div
+						class="d-grid gap-2 d-md-flex justify-content-md-start"
+					>
+						<button
+							type="button"
+							class="btn btn-primary btn-lg px-4 me-md-2"
+						>
+							Signup
+						</button>
+						<button
+							type="button"
+							class="btn btn-outline-success btn-lg px-4"
+						>
+							Browse Offers
+							<i class="bi bi-arrow-right-short"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="p-5 text-center bg1">
+			<h2>
+				You Wont find anything else down here. Start browsing vehicles
+				now.
+			</h2>
+			<a href="offers.html" class="btn btn-primary my-3">Browse Offers</a>
+		</div>
+
+		<footer class="p-4 mt-5 container-fluid bg-dark text-gray">
+			<div class="row justify-content-around">
+				<div class="col-5 col-md-2 my-2 me-2">
+					<h5>Useful Links</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a
+								href="about.html"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								About
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="login.html"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Account
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								FAQs
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Admin
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-5 col-md-2 my-2 me-2">
+					<h5>Get In Touch</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Contact
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Report
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Recommend
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 my-2 me-2">
+					<h5>Other Services</h5>
+					<ul
+						class="nav flex-row flex-md-column justify-content-between"
+					>
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Advertise
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Car Hire
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Parts & Accessories
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-md-4 my-2">
+					<form>
+						<h5>Dont Have An Account?</h5>
+						<p>
+							Create an account to start advertising offers, free
+							of charge. No hidden costs.
+						</p>
+						<div class="d-flex w-100 gap-2">
+							<label for="newsletter1" class="visually-hidden">
+								Email address
+							</label>
+							<input
+								id="newsletter1"
+								type="text"
+								class="form-control"
+								placeholder="Email address"
+							/>
+							<button class="btn btn-primary" type="button">
+								Proceed
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div
+				class="flex-column-reverse d-flex flex-md-row justify-content-between pt-4 mt-4 border-top border-gray"
+			>
+				<p>&copy; 2021 cars.zim. All rights reserved.</p>
+				<ul class="list-unstyled d-flex">
+					<li class="ms-3">
+						<a class="social-link" href="#">
+							<i class="bi bi-linkedin"></i>
+						</a>
+					</li>
+
+					<li class="ms-3">
+						<a class="social-link" href="#"
+							><i class="bi bi-github"></i>
+						</a>
+					</li>
+
+					<li class="ms-3">
+						<a class="social-link" href="#">
+							<i class="bi bi-twitter"></i
+						></a>
+					</li>
+
+					<li class="ms-3">
+						<a class="social-link" href="#">
+							<i class="bi bi-instagram"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/custom.js"></script>
+	</body>
+</html>

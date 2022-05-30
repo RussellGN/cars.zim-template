@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>cars.zim | Account</title>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/fontawesome/css/all.min.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/bootstrap/css/bootstrap.min.css"
+		/>
+
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+
+	<body class="container-xxl px-0">
+		<header
+			id="header"
+			class="container-xxl px-0 fixed-top bg-dark shadow-lg"
+		>
+			<nav class="navbar navbar-expand-lg navbar-dark p-1">
+				<div class="container-fluid">
+					<a class="navbar-brand fs-2 mb-2" href="index.html"
+						>cars<span class="text-primary">.zim</span></a
+					>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="collapse navbar-collapse"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="offers.html"
+									>Offers</a
+								>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link active" href="account.html"
+									>Account</a
+								>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="new-offer.html"
+									>New Offer</a
+								>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="login.html">Login</a>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="signup.html"
+									>Signup</a
+								>
+							</li>
+						</ul>
+
+						<div class="d-none d-lg-flex">
+							<a
+								href="new-offer.html"
+								class="new-offer-plus text-white me-2 px-2 fs-4"
+							>
+								<i class="bi bi-plus-circle"></i>
+							</a>
+
+							<a
+								href="notifications.html"
+								class="btn btn-primary position-relative me-2 px-2"
+							>
+								<i class="bi bi-bell"></i>
+								<span
+									class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
+								>
+									99+
+									<span class="visually-hidden"
+										>unread messages</span
+									>
+								</span>
+							</a>
+
+							<a
+								class="btn btn-outline-light me-2 d-flex align-items-center"
+								href="login.html"
+							>
+								Login
+							</a>
+
+							<a
+								class="btn btn-primary me-2 d-flex align-items-center"
+								href="signup.html"
+							>
+								Signup
+							</a>
+
+							<form action="" class="d-flex">
+								<input
+									name="q"
+									class="form-control"
+									type="search"
+									placeholder="Search"
+									aria-label="Search"
+								/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<!-- <div
+				class="my-0 alert alert-success alert-dismissible fade show"
+				role="alert"
+			>
+				<strong>Holy guacamole!</strong> You should check in on some of
+				those fields below.
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="alert"
+					aria-label="Close"
+				></button>
+			</div> -->
+		</header>
+
+		<div class="modals">
+			<!-- logout modal -->
+			<div
+				id="logoutmodal"
+				class="modal fade"
+				data-bs-backdrop="static"
+				data-bs-keyboard="false"
+				tabindex="-1"
+				aria-labelledby="logoutLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="logoutLabel">Logout</h5>
+
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+
+						<div class="modal-body text-center">
+							Are you sure you want to logout?
+						</div>
+
+						<div class="modal-footer text-center d-block">
+							<button
+								type="button"
+								class="btn btn-success"
+								data-bs-dismiss="modal"
+							>
+								Cancel
+							</button>
+
+							<a href="index.html" class="btn btn-dark">
+								Logout
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- remove modal -->
+			<div
+				id="removemodal"
+				class="modal fade"
+				data-bs-backdrop="static"
+				data-bs-keyboard="false"
+				tabindex="-1"
+				aria-labelledby="removeLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="removeLabel">
+								Remove This Vehicle
+							</h5>
+
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+
+						<div class="modal-body text-center">
+							Are you sure you want to take down this offer? It
+							cannot be undone.
+						</div>
+
+						<div class="modal-footer text-center d-block">
+							<button
+								type="button"
+								class="btn btn-success"
+								data-bs-dismiss="modal"
+							>
+								Cancel
+							</button>
+
+							<a href="index.html" class="btn btn-dark">
+								Remove
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="offcanvases">
+			<!-- shortlist offcanvas -->
+			<div
+				class="offcanvas bg-whitesmoke offcanvas-start"
+				tabindex="-1"
+				id="shortlistoffcanvas"
+				aria-labelledby="shortlistOffcanvasLabel"
+			>
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="shortlistOffcanvasLabel">
+						Shortlisted Offers
+					</h5>
+
+					<button
+						type="button"
+						class="btn-close text-reset"
+						data-bs-dismiss="offcanvas"
+						aria-label="Close"
+					></button>
+				</div>
+
+				<div class="offcanvas-body">
+					<div>
+						<i class="bi bi-info-circle pe-2"></i>Shortlist offers
+						that you may be interested in for viewing later. Your
+						shortlist can only be cleared by you.
+					</div>
+
+					<div class="container-fluid my-3">
+						<div class="row my-3">
+							<div class="col-10 px-0 mx-0">
+								<a class="col-8 text-decoration-none" href="#"
+									>Volvo XC90 | USD 43 000 | 22 feb 2022</a
+								>
+							</div>
+
+							<div class="col-1">
+								<a
+									href=""
+									class="col-2 text-decoration-none px-2"
+									><i class="bi bi-trash"></i
+								></a>
+							</div>
+						</div>
+
+						<div class="row my-3">
+							<div class="col-10 px-0 mx-0">
+								<a class="col-8 text-decoration-none" href="#"
+									>Volvo XC90 | USD 43 000 | 22 feb 2022</a
+								>
+							</div>
+
+							<div class="col-1">
+								<a
+									href=""
+									class="col-2 text-decoration-none px-2"
+									><i class="bi bi-trash"></i
+								></a>
+							</div>
+						</div>
+
+						<div class="row my-3">
+							<div class="col-10 px-0 mx-0">
+								<a class="col-8 text-decoration-none" href="#"
+									>Volvo XC90 | USD 43 000 | 22 feb 2022</a
+								>
+							</div>
+
+							<div class="col-1">
+								<a
+									href=""
+									class="col-2 text-decoration-none px-2"
+									><i class="bi bi-trash"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main class="container-fluid my-4">
+			<div class="row justify-content-around position-relative">
+				<div
+					class="col-lg-4 col-xl-3 p-0 profile-sidebar sticky-lg-top shadow rounded"
+				>
+					<form
+						class="profile-images d-flex justify-content-center align-items-center position-relative overflow-hidden"
+					>
+						<a
+							class="btn btn-primary shadow-lg position-absolute end-0 bottom-0 m-2"
+							onclick="clickNext(this)"
+						>
+							<i class="bi bi-camera"></i>
+						</a>
+
+						<input
+							type="file"
+							name="display-photo"
+							onforminput="clickNext(this)"
+							class="d-none"
+						/>
+
+						<button type="submit" class="d-none"></button>
+
+						<h5
+							class="account-username bg-dark rounded position-absolute start-0 bottom-0 p-2 m-0"
+						>
+							GeneralMotorsHarare
+						</h5>
+
+						<img src="assets/img/image3.jpg" class="w-100" />
+					</form>
+
+					<div class="account-details p-3">
+						<div class="mb-3">
+							<a class="btn btn-primary">
+								<i class="bi bi-pencil-square"></i
+							></a>
+
+							<a href="settings.html" class="btn btn-primary">
+								<i class="bi bi-gear"></i
+							></a>
+
+							<button
+								type="button"
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								data-bs-target="#logoutmodal"
+							>
+								<i class="bi bi-box-arrow-right"></i>
+							</button>
+						</div>
+
+						<p>
+							<i class="bi bi-envelope-fill pe-2"></i
+							>gmharare@hotmail.com
+						</p>
+
+						<p><i class="bi bi-people-fill pe-2"></i>Dealership</p>
+						<p><i class="bi bi-geo-alt-fill pe-2"></i>Harare</p>
+						<p>
+							<i class="bi bi-telephone-fill pe-2"></i>+263
+							775668441
+						</p>
+						<p>
+							General car dealer situated in Avenues, Harare. We
+							trade new and second hand vehicles.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-8">
+					<h2 class="text-center mt-2">Offers - 32</h2>
+
+					<div class="container-fluid">
+						<div class="row offer shadow mt-5">
+							<div
+								class="col-md-7 col-lg-12 col-xl-7 position-relative border border-5 border-white p-0 overflow-hidden d-flex justify-content-center align-items-center"
+							>
+								<img
+									class="w-100"
+									src="assets/img/hillux1.jpeg"
+								/>
+
+								<a
+									href="view-car.html"
+									class="btn btn-dark p-2 position-absolute top-0 start-0 text-decoration-none"
+								>
+									<i class="bi bi-images me-2"></i>4
+								</a>
+							</div>
+
+							<div class="col p-3">
+								<div
+									class="mb-3 d-flex align-items-center justify-content-between"
+								>
+									<b> Toyota Hillux legend 45 </b>
+
+									<small class="text-success">
+										2 Feb 2022<i
+											class="bi bi-clock ms-2"
+										></i>
+									</small>
+								</div>
+
+								<p>
+									<i class="me-2 bi bi-currency-dollar"></i
+									>USD 75 000
+								</p>
+
+								<p>
+									<i class="me-2 bi bi-speedometer2"></i>12
+									000 km
+								</p>
+
+								<p><i class="me-2 bi bi-geo-alt"></i>Harare</p>
+
+								<p class="text-success">321 Views</p>
+
+								<div>
+									<a
+										href="view-car.html"
+										class="btn btn-success me-2 mb-2"
+										>View<i class="bi bi-front ms-2"></i
+									></a>
+
+									<a
+										class="btn btn-primary me-2 mb-2"
+										data-bs-toggle="offcanvas"
+										href="#shortlistoffcanvas"
+										role="button"
+										aria-controls="shortlistoffcanvas"
+									>
+										Shortlist<i
+											class="bi bi-card-list ms-2"
+										></i>
+									</a>
+
+									<a class="btn btn-primary me-2 mb-2"
+										><i class="bi bi-pencil-square"></i
+									></a>
+
+									<button
+										type="button"
+										id="porsche"
+										onclick="addCarName(this)"
+										class="btn btn-primary me-2 mb-2"
+										data-bs-toggle="modal"
+										data-bs-target="#removemodal"
+									>
+										<i class="bi bi-trash-fill"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="row offer shadow mt-5">
+							<div
+								class="col-md-7 col-lg-12 col-xl-7 position-relative border border-5 border-white p-0 overflow-hidden d-flex justify-content-center align-items-center"
+							>
+								<img
+									class="w-100"
+									src="assets/img/corrola1.jpg"
+								/>
+
+								<a
+									href="view-car.html"
+									class="btn btn-dark p-2 position-absolute top-0 start-0 text-decoration-none"
+								>
+									<i class="bi bi-images me-2"></i>4
+								</a>
+							</div>
+
+							<div class="col p-3">
+								<div
+									class="mb-3 d-flex align-items-center justify-content-between"
+								>
+									<b>Toyota Corrola Quest </b>
+
+									<small class="text-success">
+										2 Feb 2022<i
+											class="bi bi-clock ms-2"
+										></i>
+									</small>
+								</div>
+
+								<p>
+									<i class="me-2 bi bi-currency-dollar"></i
+									>USD 75 000
+								</p>
+
+								<p>
+									<i class="me-2 bi bi-speedometer2"></i>12
+									000 km
+								</p>
+
+								<p><i class="me-2 bi bi-geo-alt"></i>Harare</p>
+
+								<p class="text-success">321 Views</p>
+
+								<div>
+									<a
+										href="view-car.html"
+										class="btn btn-success me-2 mb-2"
+										>View<i class="bi bi-front ms-2"></i
+									></a>
+
+									<a
+										class="btn btn-primary me-2 mb-2"
+										data-bs-toggle="offcanvas"
+										href="#shortlistoffcanvas"
+										role="button"
+										aria-controls="shortlistoffcanvas"
+									>
+										Shortlist<i
+											class="bi bi-card-list ms-2"
+										></i>
+									</a>
+
+									<a class="btn btn-primary me-2 mb-2"
+										><i class="bi bi-pencil-square"></i
+									></a>
+
+									<button
+										type="button"
+										id="porsche"
+										onclick="addCarName(this)"
+										class="btn btn-primary me-2 mb-2"
+										data-bs-toggle="modal"
+										data-bs-target="#removemodal"
+									>
+										<i class="bi bi-trash-fill"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="row offer shadow mt-5">
+							<div
+								class="col-md-7 col-lg-12 col-xl-7 position-relative border border-5 border-white p-0 overflow-hidden d-flex justify-content-center align-items-center"
+							>
+								<img
+									class="w-100"
+									src="assets/img/porsche.JPG"
+								/>
+
+								<a
+									href="view-car.html"
+									class="btn btn-dark p-2 position-absolute top-0 start-0 text-decoration-none"
+								>
+									<i class="bi bi-images me-2"></i>4
+								</a>
+							</div>
+
+							<div class="col p-3">
+								<div
+									class="mb-3 d-flex align-items-center justify-content-between"
+								>
+									<b> Porsche 911 Carrera 4S </b>
+
+									<small class="text-success">
+										2 Feb 2022<i
+											class="bi bi-clock ms-2"
+										></i>
+									</small>
+								</div>
+
+								<p>
+									<i class="me-2 bi bi-currency-dollar"></i
+									>USD 75 000
+								</p>
+
+								<p>
+									<i class="me-2 bi bi-speedometer2"></i>12
+									000 km
+								</p>
+
+								<p><i class="me-2 bi bi-geo-alt"></i>Harare</p>
+
+								<p class="text-success">321 Views</p>
+
+								<div>
+									<a
+										href="view-car.html"
+										class="btn btn-success me-2 mb-2"
+										>View<i class="bi bi-front ms-2"></i
+									></a>
+
+									<a
+										class="btn btn-primary me-2 mb-2"
+										data-bs-toggle="offcanvas"
+										href="#shortlistoffcanvas"
+										role="button"
+										aria-controls="shortlistoffcanvas"
+									>
+										Shortlist<i
+											class="bi bi-card-list ms-2"
+										></i>
+									</a>
+
+									<a class="btn btn-primary me-2 mb-2"
+										><i class="bi bi-pencil-square"></i
+									></a>
+
+									<button
+										type="button"
+										id="porsche"
+										onclick="addCarName(this)"
+										class="btn btn-primary me-2 mb-2"
+										data-bs-toggle="modal"
+										data-bs-target="#removemodal"
+									>
+										<i class="bi bi-trash-fill"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<nav aria-label="Page navigation" class="my-5">
+						<ul class="pagination justify-content-center">
+							<li class="page-item disabled">
+								<a class="page-link">Previous</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#">1</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#">2</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#">3</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#">Next</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</main>
+
+		<footer class="p-4 mt-5 container-fluid bg-dark text-gray">
+			<div class="row justify-content-around">
+				<div class="col-5 col-md-2 my-2 me-2">
+					<h5>Useful Links</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a
+								href="about.html"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								About
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="login.html"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Account
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								FAQs
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Admin
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-5 col-md-2 my-2 me-2">
+					<h5>Get In Touch</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Contact
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Report
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Recommend
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 my-2 me-2">
+					<h5>Other Services</h5>
+					<ul
+						class="nav flex-row flex-md-column justify-content-between"
+					>
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Advertise
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Car Hire
+							</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0 text-decoration-underline"
+							>
+								Parts & Accessories
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-md-4 my-2">
+					<form>
+						<h5>Dont Have An Account?</h5>
+						<p>
+							Create an account to start advertising offers, free
+							of charge. No hidden costs.
+						</p>
+						<div class="d-flex w-100 gap-2">
+							<label for="newsletter1" class="visually-hidden">
+								Email address
+							</label>
+							<input
+								id="newsletter1"
+								type="text"
+								class="form-control"
+								placeholder="Email address"
+							/>
+							<button class="btn btn-primary" type="button">
+								Proceed
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div
+				class="flex-column-reverse d-flex flex-md-row justify-content-between pt-4 mt-4 border-top border-gray"
+			>
+				<p>&copy; 2021 cars.zim. All rights reserved.</p>
+				<ul class="list-unstyled d-flex">
+					<li class="ms-3">
+						<a class="social-link" href="#">
+							<i class="bi bi-linkedin"></i>
+						</a>
+					</li>
+
+					<li class="ms-3">
+						<a class="social-link" href="#"
+							><i class="bi bi-github"></i>
+						</a>
+					</li>
+
+					<li class="ms-3">
+						<a class="social-link" href="#">
+							<i class="bi bi-twitter"></i
+						></a>
+					</li>
+
+					<li class="ms-3">
+						<a class="social-link" href="#">
+							<i class="bi bi-instagram"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/custom.js"></script>
+	</body>
+</html>

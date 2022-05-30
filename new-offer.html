@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>cars.zim | New</title>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="assets/vendor/bootstrap/css/bootstrap.min.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="assets/vendor/fontawesome/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+
+	<body class="container-xxl px-0">
+		<header
+			id="header"
+			class="container-xxl px-0 fixed-top bg-dark shadow-lg"
+		>
+			<nav class="navbar navbar-expand-lg navbar-dark p-1">
+				<div class="container-fluid">
+					<a class="navbar-brand fs-2 mb-2" href="index.html"
+						>cars<span class="text-primary">.zim</span></a
+					>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="collapse navbar-collapse"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="offers.html"
+									>Offers</a
+								>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="account.html"
+									>Account</a
+								>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="new-offer.html"
+									>New Offer</a
+								>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="login.html">Login</a>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="signup.html"
+									>Signup</a
+								>
+							</li>
+						</ul>
+
+						<div class="d-none d-lg-flex">
+							<a
+								href="new-offer.html"
+								class="new-offer-plus text-white me-2 px-2 fs-4"
+							>
+								<i class="bi bi-plus-circle"></i>
+							</a>
+
+							<a
+								href="notifications.html"
+								class="btn btn-primary position-relative me-2 px-2"
+							>
+								<i class="bi bi-bell"></i>
+								<span
+									class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
+								>
+									99+
+									<span class="visually-hidden"
+										>unread messages</span
+									>
+								</span>
+							</a>
+
+							<a
+								class="btn btn-outline-light me-2 d-flex align-items-center"
+								href="login.html"
+							>
+								Login
+							</a>
+
+							<a
+								class="btn btn-primary me-2 d-flex align-items-center"
+								href="signup.html"
+							>
+								Signup
+							</a>
+
+							<form action="" class="d-flex">
+								<input
+									name="q"
+									class="form-control"
+									type="search"
+									placeholder="Search"
+									aria-label="Search"
+								/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<!-- <div
+				class="my-0 alert alert-success alert-dismissible fade show"
+				role="alert"
+			>
+				<strong>Holy guacamole!</strong> You should check in on some of
+				those fields below.
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="alert"
+					aria-label="Close"
+				></button>
+			</div> -->
+		</header>
+
+		<main class="my-4 px-4">
+			<h1 class="text-center mb-3">Post your vehicle for sale.</h1>
+
+			<form class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<p class="text-success my-4">
+							<i class="bi bi-info-circle"></i>
+							Step 1. Enter the following details.
+						</p>
+
+						<div class="form-floating mb-3">
+							<input
+								name="vehiclename"
+								type="text"
+								id="vehiclename"
+								class="form-control"
+								placeholder="Name of vehicle"
+							/>
+							<label for="vehiclename">Name of vehicle</label>
+						</div>
+
+						<div class="form-floating mb-3">
+							<input
+								name="vehicleprice"
+								type="number"
+								id="vehicleprice"
+								class="form-control"
+								placeholder="Price In USD"
+							/>
+							<label for="vehicleprice">Price In USD</label>
+						</div>
+
+						<div class="form-floating mb-3">
+							<input
+								name="vehiclemileage"
+								type="number"
+								id="vehiclemileage"
+								class="form-control"
+								placeholder="Mileage In Kilometres"
+							/>
+							<label for="vehiclemileage"
+								>Mileage In Kilometers</label
+							>
+						</div>
+
+						<div class="form-floating mb-3">
+							<input
+								name="vehiclelocation"
+								type="text"
+								id="vehiclelocation"
+								class="form-control"
+								placeholder="Location"
+							/>
+							<label for="vehiclelocation">Location</label>
+						</div>
+
+						<div class="mb-3">
+							<label
+								for="descriptionText"
+								class="form-label d-block p-2"
+								>Description</label
+							>
+							<textarea
+								class="form-control"
+								name="otherdetails"
+								id="otherdetails"
+								rows="4"
+							>
+Vehicle details, condition, features and any other information.</textarea
+							>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<p class="text-success my-4">
+							<i class="bi bi-info-circle"></i>
+							Step 2. Upload images. Image 1 will be displayed
+							first.
+						</p>
+
+						<div class="container-fluid p-0">
+							<div
+								class="row justify-content-around images-container m-0 p-0"
+							>
+								<div
+									class="col-12 border h-120-px position-relative bg-dark mb-1"
+								>
+									<i
+										onclick="clickNext(this)"
+										class="bi bi-image position-absolute top-50 start-50 translate-middle fs-1 hover-white"
+									></i>
+									<input
+										type="file"
+										name="image1"
+										class="d-none"
+									/>
+								</div>
+
+								<div
+									class="col-4 border h-80-px position-relative bg-dark mb-1"
+								>
+									<i
+										onclick="clickNext(this)"
+										class="bi bi-image position-absolute top-50 start-50 translate-middle fs-1 hover-white"
+									></i>
+									<input
+										type="file"
+										name="image2"
+										class="d-none"
+									/>
+								</div>
+
+								<div
+									class="col-4 border h-80-px position-relative bg-dark mb-1"
+								>
+									<i
+										onclick="clickNext(this)"
+										class="bi bi-image position-absolute top-50 start-50 translate-middle fs-1 hover-white"
+									></i>
+									<input
+										type="file"
+										name="image3"
+										class="d-none"
+									/>
+								</div>
+
+								<div
+									class="col-4 border h-80-px position-relative bg-dark mb-1"
+								>
+									<i
+										onclick="clickNext(this)"
+										class="bi bi-image position-absolute top-50 start-50 translate-middle fs-1 hover-white"
+									></i>
+									<input
+										type="file"
+										name="image4"
+										class="d-none"
+									/>
+								</div>
+
+								<div
+									class="col-4 border h-80-px position-relative bg-dark mb-1"
+								>
+									<i
+										onclick="clickNext(this)"
+										class="bi bi-image position-absolute top-50 start-50 translate-middle fs-1 hover-white"
+									></i>
+									<input
+										type="file"
+										name="image5"
+										class="d-none"
+									/>
+								</div>
+
+								<div
+									class="col-4 border h-80-px position-relative bg-dark mb-1"
+								>
+									<i
+										onclick="clickNext(this)"
+										class="bi bi-image position-absolute top-50 start-50 translate-middle fs-1 hover-white"
+									></i>
+									<input
+										type="file"
+										name="image6"
+										class="d-none"
+									/>
+								</div>
+
+								<div
+									class="col-4 border h-80-px position-relative bg-dark mb-1"
+								>
+									<i
+										onclick="clickNext(this)"
+										class="bi bi-image position-absolute top-50 start-50 translate-middle fs-1 hover-white"
+									></i>
+									<input
+										type="file"
+										name="image7"
+										class="d-none"
+									/>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<button
+								class="btn me-2 my-3 btn-primary"
+								type="submit"
+							>
+								Proceed
+							</button>
+
+							<button class="btn btn-danger" type="reset">
+								Reset
+							</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</main>
+
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
